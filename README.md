@@ -4,7 +4,7 @@ A simple and clean web application to create, read, update, and delete your dail
 
 ## Screenshot
 
-![MyTodo Application Screenshot](image_445167.png)
+![MyTodo Application Screenshot](login.png)
 
 ## Features
 
