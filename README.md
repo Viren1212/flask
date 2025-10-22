@@ -1,63 +1,57 @@
-# Flask
+# MyTodo - ToDo List Web Application
 
-[![1-click-deploy](https://raw.githubusercontent.com/DefangLabs/defang-assets/main/Logos/Buttons/SVG/deploy-with-defang.svg)](https://portal.defang.dev/redirect?url=https%3A%2F%2Fgithub.com%2Fnew%3Ftemplate_name%3Dsample-flask-template%26template_owner%3DDefangSamples)
+A simple and clean web application to create, read, update, and delete your daily tasks. This project allows you to manage a personal to-do list directly from your browser.
 
-This is a basic Flask to-do app that can be deployed with Defang.  Note that alongside your `.py` file, include a `requirements.txt` so that the Dockerfile can install the necessary packages with pip.
+## Screenshot
 
-This project is intended to provide a basic understanding of how to get started with Flask on Defang. The items are stored in memory and are lost when the server is restarted. **It is not intended for production use**. If you need something production ready, you should use a managed database like Postgres or MySQL.
+![MyTodo Application Screenshot](image_445167.png)
 
-## Prerequisites
+## Features
 
-1. Download [Defang CLI](https://github.com/DefangLabs/defang)
-2. (Optional) If you are using [Defang BYOC](https://docs.defang.io/docs/concepts/defang-byoc) authenticate with your cloud provider account
-3. (Optional for local development) [Docker CLI](https://docs.docker.com/engine/install/)
+* **Create:** Add new tasks with a "Todo Title" and "Todo Description".
+* **Read:** View all your current tasks in an organized table with a timestamp.
+* **Update:** Modify existing tasks using the "Update" button.
+* **Delete:** Remove completed or unwanted tasks using the "Delete" button.
+* **Search:** Includes a search bar in the navigation to find specific tasks.
+* **Navigation:** Basic site navigation with "Home" and "About" pages.
 
-## Development
+## Technologies Used
 
-To run the application locally, you can use the following command:
+*(Please fill this section with the technologies you used. Here are some examples—delete the ones you didn't use.)*
 
-```bash
-docker compose up --build
-```
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Python (Flask / Django)
+* **Database:** SQLite / PostgreSQL
+* **Other:** Bootstrap
 
-## Configuration
+## How to Run This Project
 
-For this sample, you will not need to provide [configuration](https://docs.defang.io/docs/concepts/configuration). 
+*(Please add your specific setup instructions here. Here is a common example.)*
 
-If you wish to provide configuration, see below for an example of setting a configuration for a value named `API_KEY`.
-
-```bash
-defang config set API_KEY
-```
-
-## Deployment
-
-> [!NOTE]
-> Download [Defang CLI](https://github.com/DefangLabs/defang)
-
-### Defang Playground
-
-Deploy your application to the Defang Playground by opening up your terminal and typing:
-```bash
-defang compose up
-```
-
-### BYOC (AWS)
-
-If you want to deploy to your own cloud account, you can use Defang BYOC:
-
-1. [Authenticate your AWS account](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html), and check that you have properly set your environment variables like `AWS_PROFILE`, `AWS_REGION`, `AWS_ACCESS_KEY_ID`, and `AWS_SECRET_ACCESS_KEY`.
-2. Run in a terminal that has access to your AWS environment variables:
-    ```bash
-    defang --provider=aws compose up
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/](https://github.com/)[your-username]/[your-repository-name].git
     ```
-
----
-
-Title: Flask
-
-Short Description: A basic Flask to-do app.
-
-Tags: Flask, Python
-
-Languages: python
+2.  **Navigate to the project directory:**
+    ```sh
+    cd [your-repository-name]
+    ```
+3.  **Install the required dependencies:**
+    *(e.g., if you used Python)*
+    ```sh
+    pip install -r requirements.txt
+    ```
+    *(e.g., if you used Node.js)*
+    ```sh
+    npm install
+    ```
+4.  **Run the application:**
+    *(e.g., if you used Flask)*
+    ```sh
+    python app.py
+    ```
+    *(e.g., if you used React)*
+    ```sh
+    npm start
+    ```
+5.  Open your browser and go to `http://127.0.0.1:5000` (or the address provided in your terminal).
